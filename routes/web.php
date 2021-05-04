@@ -17,8 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    echo "hello world! :)";
-});
-
 Route::get('/series', [SeriesController::class, 'index']);
+Route::get('/series/create', [SeriesController::class, 'create']);
+
